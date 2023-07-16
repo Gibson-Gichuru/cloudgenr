@@ -1,0 +1,10 @@
+apiVersion: kustomixe.config.k8s.io/v1beta1
+kind: Kustomization
+secretGenerator:
+  - name: mydbsecret
+  literals:
+  - rootpass=elcy
+# resources:
+#   -
+
+
