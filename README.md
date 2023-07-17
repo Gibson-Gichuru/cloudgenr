@@ -13,9 +13,10 @@ using Terraform and Helm.
 4. Relation Database as per the instructions.
 
 ## Prerequisites:
-- Terraform installation
+- Terraform installation 
 - Kubectl and Minikube installation
-- Installing Helm 
+- Installing Helm
+  
 - Lucid/Draw.io for the architectural diagram
 
 ## Architectural Diagram
@@ -35,7 +36,26 @@ using Terraform and Helm.
 I set up the efs provisioner using Helm and the file contents are located in the efs-provisioner folder.
 
 **Steps to recreate:**
+```
+helm init
+```
+```
+helm create efs-provisioner
+helm package efs-provisioner
+helm install efs-provisioner efs-provisioner-0.1.0.tgz
+```
 
+Replace the cluster name with the cluster name created by Terraform.
+
+Since the EKS Cluster will be created in the AWS console, and Helm is installed directly on your PC, for the two to communicate using Kubernetes you need to set up kubeconfig from your terminal
+
+```
+aws eks update-kubeconfig --name <cluster-name> --region <region>
+kubectl get pods --all-namespaces
+helm package .
+helm install efs ./efs-provisioner-0.1.0.tgz --kubeconfig ~/pathtoconfigfile
+```
+The command above is used to install Helm Chart called efs using a specific Kubernetes configuration file.
 
 To use EFS Provisioner in Kubernetes Deployment to dynamically provision EFS Volume, you need a **PersisstantVolumeClaim (PVC).** 
 
@@ -54,7 +74,7 @@ The RDS database instance is used by WordPress.
   terraform plan --var-file=tfvars/dev.tfvars &&  terraform apply --var-file=tfvars/dev.tfvars
  ```
 
-## Setting up Helm
+## Setting up Helm for WordPress Deployment
 
 - Initialize Helm by running ``helm init``
 
@@ -65,7 +85,19 @@ The RDS database instance is used by WordPress.
 - Using Helm to deploy the WordPress chart onto EKS cluster
 
 ## Challenges Faced:
-- 
+1.  **Error:** While running ```terraform plan``` command, kept getting undeclared input variables for the eks.tf file
+   
+    **Solution:** Creating tfvar folder with env variables defined and referencing them while running terraform scripts ```terrfaorm plan --var-file=tfvars/devtfvars```
+    
+2.  **Error:**
+   
+   **Solution:**
+
+3.  **Error:**
+    **Solution:**
+5.  
+6.  
+
 
 ## References Used:
 * [Setting up EKS with EFS using Terraform]()
