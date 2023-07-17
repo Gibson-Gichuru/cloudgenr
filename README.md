@@ -15,7 +15,7 @@ using Terraform and Helm.
 ## Prerequisites:
 - Terraform installed 
 - Kubectl and Minikube installed
-- Installing Helm on 
+- Installing Helm 
 - Lucid/Draw.io for the architectural diagram
 
 ## Architectural Diagram
@@ -62,3 +62,6 @@ The RDS database instance is used by WordPress.
 ## Challenges Faced:
 - 
 
+## References Used:
+* [Setting up EKS with EFS using Terraform]()
+* [Deploying application Using Helm in Kuberenetes](https://medium.com/avmconsulting-blog/deploying-applications-using-helm-in-kubernetes-b5c8b609e4b5)
