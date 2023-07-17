@@ -50,8 +50,8 @@ Running terraform scripts:
 
 - Initialize Helm by running ``helm init``
 
--  Update the Helm repo by running ```help repo update```
+-  Update the Helm repo by running ```helm repo update```
 
 -  Create a Helm chart for WordPress, which defines the deployment and Kubernetes services needed to run WordPress.
 
-.- Using Helm to deploy the WordPress chart onto EKS cluster
+- Using Helm to deploy the WordPress chart onto EKS cluster
