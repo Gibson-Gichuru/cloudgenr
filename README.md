@@ -57,6 +57,10 @@ helm install efs ./efs-provisioner-0.1.0.tgz --kubeconfig ~/pathtoconfigfile
 ```
 The command above is used to install Helm Chart called efs using a specific Kubernetes configuration file.
 
+Here's an example of the expected output screenshot:
+
+![]()
+
 To use EFS Provisioner in Kubernetes Deployment to dynamically provision EFS Volume, you need a **PersisstantVolumeClaim (PVC).** 
 
 ### Provisioning the RDS Database
