@@ -13,9 +13,9 @@ WordPress docker image
 Relation Database as per the instructions.
 
 ## Prerequisites:
-- Terraform installed
+- Terraform installed 
 - Kubectl and minikube installed
-- Installing Helm
+- Installing Helm on 
 - Lucid/Draw.io for the architectural diagram
 
 ## Architectural Diagram
@@ -28,7 +28,7 @@ Relation Database as per the instructions.
  - you can also view the vpc.tf file which has vpc module that contains the appropriate networking settings, like VPC, subnets, security group, and role.
 
 ### Defining EFS File System
-- The [efs.tf](https://github.com/elsie-dev/7Ts/blob/main/terraform/03_efs.tf) is used to store the data and configuration for the prroject permanently. 
+- The [efs. tf](https://github.com/elsie-dev/7Ts/blob/main/terraform/03_efs.tf) is used to store the data and configuration for the project permanently. 
 
 **EFS provisioner** uses EFS Storage for creating resources in the EKS cluster.
 To run the EFS provisioned ...............................
@@ -40,10 +40,11 @@ The RDS database instance is used by WordPress.
 
 Running terraform scripts:
 - Clone the repo
-- Run ```terraform init```
+- Run ```terraform init``` initializes backend which is responsible for storing Terraform state.
+- Tfvar
   
  ```
-  terraform plan --var-file=tfvars/dev.tfvars &&  terraformapply --var-file=tfvars/dev.tfvars
+  terraform plan --var-file=tfvars/dev.tfvars &&  terraform apply --var-file=tfvars/dev.tfvars
  ```
 
 ## Setting up Helm
@@ -55,3 +56,7 @@ Running terraform scripts:
 -  Create a Helm chart for WordPress, which defines the deployment and Kubernetes services needed to run WordPress.
 
 - Using Helm to deploy the WordPress chart onto EKS cluster
+
+## Challenges Faced:
+- 
+
