@@ -21,3 +21,10 @@ Relation Database as per the instructions.
 ## Architectural Diagram
 
 ## Terraform 
+### Creating EKS Cluster and EFS Storage:
+
+ - The [eks.tf](https://github.com/elsie-dev/7Ts/blob/main/terraform/02_eks.tf) uses EKS terraform module to define the EKS cluster by specifying configurations like region, and instance type.
+ - you can also view the vpc.tf file which has vpc module that contains the appropriate networking settings, like VPC, subnets, security group, and role.
+
+### Defining EFS File System
+- The [efs.tf](https://github.com/elsie-dev/7Ts/blob/main/terraform/03_efs.tf) is used to define EFS file system used to store the WordPress data.
