@@ -27,4 +27,17 @@ Relation Database as per the instructions.
  - you can also view the vpc.tf file which has vpc module that contains the appropriate networking settings, like VPC, subnets, security group, and role.
 
 ### Defining EFS File System
-- The [efs.tf](https://github.com/elsie-dev/7Ts/blob/main/terraform/03_efs.tf) is used to define EFS file system used to store the WordPress data.
+- The [efs.tf](https://github.com/elsie-dev/7Ts/blob/main/terraform/03_efs.tf) is used to store the data and configuration for the prroject permanently. 
+
+Running terraform scripts:
+
+```
+Terraform init
+```
+
+```
+Terraform plan --var-file=tfvar/dev.tfvars && Terraform apply --var-file=tfvar/dev.tfvars
+```
+
+**EFS provisioner** is created next, so that EFS Storage can be used by the resources in the EKS cluster.
+To run the EFS provisioned ...............................
