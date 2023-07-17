@@ -1,5 +1,5 @@
-
 # Multi-Tier Application Deployment in EKS
+
 ## Summary:
 Deploying a multi-tier application (WordPress) using EKS (Elastic Kubernetes Service), EFS (Elastic File System), RDS (Relational Database Service)
 using Terraform and Helm.
@@ -13,8 +13,8 @@ using Terraform and Helm.
 4. Relation Database as per the instructions.
 
 ## Prerequisites:
-- Terraform installed 
-- Kubectl and Minikube installed
+- Terraform installation
+- Kubectl and Minikube installation
 - Installing Helm 
 - Lucid/Draw.io for the architectural diagram
 
@@ -31,8 +31,13 @@ using Terraform and Helm.
 - The [efs. tf](https://github.com/elsie-dev/7Ts/blob/main/terraform/03_efs.tf) is used to store the data and configuration for the project permanently. 
 
 **EFS provisioner** uses EFS Storage for creating resources in the EKS cluster.
-To run the EFS provisioned ...............................
-To use EFS Volume, you need a persistent volume claim, which is Kubernetes manifest file pvc.yaml.
+
+I set up the efs provisioner using Helm and the file contents are located in the efs-provisioner folder.
+
+**Steps to recreate:**
+
+
+To use EFS Provisioner in Kubernetes Deployment to dynamically provision EFS Volume, you need a **PersisstantVolumeClaim (PVC).** 
 
 ### Provisioning the RDS Database
 
@@ -42,7 +47,7 @@ The RDS database instance is used by WordPress.
 
 - Clone the repo
 - Cd to the terraform folder
-- Run ```terraform init```, this command initializes backend which is responsible for storing Terraform state.
+- Run ```terraform init```, this command initializes the backend which is responsible for storing Terraform state.
 - Tfvar allows to separate  sensitive values for my case, the environment tag from the main code. Not including it in the Terraform  plan and apply command generates an error
   
  ```
