@@ -120,13 +120,14 @@ terraform destroy --var-file=tfvars/dev.tfvars
 
     **Solution:** Creating tfvar folder with env variables defined and referencing them while running terraform scripts ```terraform plan --var-file=tfvars/devtfvars```
 
-2.  **Error:** Kubectl get nodes command failed. This resulted from the DNS resolution issue in the network when API endpoint is not 
+2.  **Error:** Kubectl get nodes command failed. This resulted from the DNS resolution issue in the network when the API endpoint is not 
     accessible
 
-   **Solution:** Destroying the previous resources provisioned by terraform. Recreating them,ensuring DNS server in the network resolves 
+   **Solution:** Destroying the previous resources provisioned by Terraform. Recreating them, ensuring DNS server in the network resolves 
    to the right hostname
 
-3.  **Error:**
+3.  **Error:** While using Helm to deploy my solution to EKS, I keep receiving no host error when installing the Helm chart, I intend to 
+   debug this further, this is the last step to my deployment.
     **Solution:**
 
 
