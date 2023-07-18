@@ -85,25 +85,33 @@ The RDS database instance is used by WordPress.
 
 - Initialize Helm by running ``helm init``
 
--  Update the Helm repo by running ```helm repo update```
+-  Adding the Helm repo by running ```helm repo helm repo add my-repo https://charts.bitnami.com/bitnami```
 
--  Create a Helm chart for WordPress, which defines the deployment and Kubernetes services needed to run WordPress.
+-  Create a Helm chart for WordPress, which defines the deployment and Kubernetes services needed to run WordPress  ```helm install my-release my-repo/wordpress --set wordpressPassword=password ```
 
-- Using Helm to deploy the WordPress chart onto EKS cluster
+- After succesful deployment,check the pods and see status
+kubectl get pods
+
+To access the wordpress site:
+
+```
+export SERVICE_IP=$(kubectl get svc --namespace default wp-demo-wordpress --include "{{ range (index .status.loadBalancer.ingress 0) }}{{ . }}{{ end }}")
+echo "WordPress URL: http://$SERVICE_IP/"
+echo "WordPress Admin URL: http://$SERVICE_IP/admin"
+```
 
 ## Challenges Faced:
+
 1.  **Error:** While running ```terraform plan``` command, kept getting undeclared input variables for the eks.tf file
 
     **Solution:** Creating tfvar folder with env variables defined and referencing them while running terraform scripts ```terrfaorm plan --var-file=tfvars/devtfvars```
 
-2.  **Error:**
+2.  **Error:** Kubectl get nodes command failed. This resulted from the DNS resolution issue in the network when API endpoint is not accessible
 
-   **Solution:**
+   **Solution:** Destroying the previous resources provisioned by terraform. Recreating them,ensuring DNS server in the network resolves to the right hostname
 
 3.  **Error:**
     **Solution:**
-5.
-6.
 
 
 ## References Used:
