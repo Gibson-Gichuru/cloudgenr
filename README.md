@@ -13,14 +13,15 @@ using Terraform and Helm.
 4. Relation Database as per the instructions.
 
 ## Prerequisites:
-- Terraform installation 
+- Terraform installation
 - Kubectl and Minikube installation
 - Installing Helm
-  
-- Lucid/Draw.io for the architectural diagram
+
+- Lucid for the architectural diagram
 
 ## Architectural Diagram
 
+![](C:\Users\Administrator\7Ts\terraform\templates\error-screenshots\diagram.jpg)
 ## Terraform Files and Setup
 
 ### Creating EKS Cluster and EFS Storage:
@@ -29,7 +30,8 @@ using Terraform and Helm.
  - You can also view the [vpc.tf](https://github.com/elsie-dev/7Ts/blob/main/terraform/01_vpc.tf) file which has vpc module that contains the appropriate networking settings, like VPC, subnets, security group, and role.
 
 ### Defining EFS File System
-- The [efs. tf](https://github.com/elsie-dev/7Ts/blob/main/terraform/03_efs.tf) is used to store the data and configuration for the project permanently. 
+
+- The [efs. tf](https://github.com/elsie-dev/7Ts/blob/main/terraform/03_efs.tf) is used to store the data and configuration for the project permanently.
 
 **EFS provisioner** uses EFS Storage for creating resources in the EKS cluster.
 
@@ -61,7 +63,7 @@ Here's an example of the expected output screenshot:
 
 ![]()
 
-To use EFS Provisioner in Kubernetes Deployment to dynamically provision EFS Volume, you need a **PersisstantVolumeClaim (PVC).** 
+To use EFS Provisioner in Kubernetes Deployment to dynamically provision EFS Volume, you need a **PersisstantVolumeClaim (PVC).**
 
 ### Provisioning the RDS Database
 
@@ -73,7 +75,7 @@ The RDS database instance is used by WordPress.
 - Cd to the terraform folder
 - Run ```terraform init```, this command initializes the backend which is responsible for storing Terraform state.
 - Tfvar allows to separate  sensitive values for my case, the environment tag from the main code. Not including it in the Terraform  plan and apply command generates an error
-  
+
  ```
   terraform plan --var-file=tfvars/dev.tfvars &&  terraform apply --var-file=tfvars/dev.tfvars
  ```
@@ -90,17 +92,17 @@ The RDS database instance is used by WordPress.
 
 ## Challenges Faced:
 1.  **Error:** While running ```terraform plan``` command, kept getting undeclared input variables for the eks.tf file
-   
+
     **Solution:** Creating tfvar folder with env variables defined and referencing them while running terraform scripts ```terrfaorm plan --var-file=tfvars/devtfvars```
-    
+
 2.  **Error:**
-   
+
    **Solution:**
 
 3.  **Error:**
     **Solution:**
-5.  
-6.  
+5.
+6.
 
 
 ## References Used:
