@@ -9,7 +9,7 @@
 
 ## Architectural Diagram
 
-![](C:\Users\Administrator\7Ts\terraform\templates\error-screenshots\diagram.jpg)
+![](terraform/templates/error-screenshots/diagram.jpg)
 
 ## Summary:
 Deploying a multi-tier application (WordPress) using EKS (Elastic Kubernetes Service), EFS (Elastic File System), RDS (Relational Database Service)
@@ -62,7 +62,7 @@ The command above is used to install Helm Chart called efs using a specific Kube
 
 Here's an example of the expected output screenshot:
 
-![]()
+![](/terraform/templates/error-screenshots/kubectl%20efs%20pod.JPG)
 
 To use EFS Provisioner in Kubernetes Deployment to dynamically provision EFS Volume, you need a **PersisstantVolumeClaim (PVC).**
 
@@ -120,9 +120,11 @@ terraform destroy --var-file=tfvars/dev.tfvars
 
     **Solution:** Creating tfvar folder with env variables defined and referencing them while running terraform scripts ```terraform plan --var-file=tfvars/devtfvars```
 
-2.  **Error:** Kubectl get nodes command failed. This resulted from the DNS resolution issue in the network when API endpoint is not accessible
+2.  **Error:** Kubectl get nodes command failed. This resulted from the DNS resolution issue in the network when API endpoint is not 
+    accessible
 
-   **Solution:** Destroying the previous resources provisioned by terraform. Recreating them,ensuring DNS server in the network resolves to the right hostname
+   **Solution:** Destroying the previous resources provisioned by terraform. Recreating them,ensuring DNS server in the network resolves 
+   to the right hostname
 
 3.  **Error:**
     **Solution:**
