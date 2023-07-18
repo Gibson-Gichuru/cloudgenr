@@ -100,11 +100,25 @@ echo "WordPress URL: http://$SERVICE_IP/"
 echo "WordPress Admin URL: http://$SERVICE_IP/admin"
 ```
 
+## Clean Up steps
+
+- To destroy the nodes
+
+```
+kubectl delete nodes --all
+```
+
+- To delete the terraform files
+
+```
+terraform destroy --var-file=tfvars/dev.tfvars
+```
+
 ## Challenges Faced:
 
 1.  **Error:** While running ```terraform plan``` command, kept getting undeclared input variables for the eks.tf file
 
-    **Solution:** Creating tfvar folder with env variables defined and referencing them while running terraform scripts ```terrfaorm plan --var-file=tfvars/devtfvars```
+    **Solution:** Creating tfvar folder with env variables defined and referencing them while running terraform scripts ```terraform plan --var-file=tfvars/devtfvars```
 
 2.  **Error:** Kubectl get nodes command failed. This resulted from the DNS resolution issue in the network when API endpoint is not accessible
 
