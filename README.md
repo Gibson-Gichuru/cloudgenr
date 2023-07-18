@@ -1,5 +1,16 @@
 # Multi-Tier Application Deployment in EKS
 
+## Prerequisites:
+- Terraform installation
+- Kubectl and Minikube installation
+- Installing Helm
+
+- Lucid for the architectural diagram
+
+## Architectural Diagram
+
+![](C:\Users\Administrator\7Ts\terraform\templates\error-screenshots\diagram.jpg)
+
 ## Summary:
 Deploying a multi-tier application (WordPress) using EKS (Elastic Kubernetes Service), EFS (Elastic File System), RDS (Relational Database Service)
 using Terraform and Helm.
@@ -12,16 +23,6 @@ using Terraform and Helm.
 
 4. Relation Database as per the instructions.
 
-## Prerequisites:
-- Terraform installation
-- Kubectl and Minikube installation
-- Installing Helm
-
-- Lucid for the architectural diagram
-
-## Architectural Diagram
-
-![](C:\Users\Administrator\7Ts\terraform\templates\error-screenshots\diagram.jpg)
 ## Terraform Files and Setup
 
 ### Creating EKS Cluster and EFS Storage:
