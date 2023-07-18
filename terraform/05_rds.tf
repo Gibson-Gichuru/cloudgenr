@@ -34,13 +34,13 @@ resource "aws_db_instance" "wordpress"{
 #   }
 # }
 
-resource "null_resource" "deploy-wordpress" {
-    depends_on = [
-        aws_db_instance.wordpress,
-    ]
-    provisioner "local-exec" {
-       command = "kubectl create -k ${path.module}"
-       working_dir = "${path.module}"
-    }
+# resource "null_resource" "deploy-wordpress" {
+#     depends_on = [
+#         aws_db_instance.wordpress,
+#     ]
+#     provisioner "local-exec" {
+#        command = "kubectl create -k ${path.module}"
+#        working_dir = "${path.module}"
+#     }
 
-}
+# }
