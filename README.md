@@ -9,7 +9,7 @@
 
 ## Architectural Diagram
 
-![](terraform/templates/error-screenshots/diagram.jpg)
+![](terraform/templates/screenshots/diagram.jpg)
 
 ## Summary:
 Deploying a multi-tier application (WordPress) using EKS (Elastic Kubernetes Service), EFS (Elastic File System), RDS (Relational Database Service)
@@ -62,7 +62,7 @@ The command above is used to install Helm Chart called efs using a specific Kube
 
 Here's an example of the expected output screenshot:
 
-![](/terraform/templates/error-screenshots/kubectl%20efs%20pod.JPG)
+![](terraform/templates/screenshots/helmefs%20deployed.JPG)
 
 To use EFS Provisioner in Kubernetes Deployment to dynamically provision EFS Volume, you need a **PersisstantVolumeClaim (PVC).**
 
