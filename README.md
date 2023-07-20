@@ -134,17 +134,16 @@ terraform destroy --var-file=tfvars/dev.tfvars
 3.   **Error**: Connection to server localhost:8080 was refused did you specify port?
      
      **Solution**: This occurs when Kubectl doesn't have the right permission to 
-     access the cluster. Once eks has been provisioned by Terraform,you set the 
+     access the cluster. Once eks has been provisioned by Terraform,you need to set the 
      kubeconfig to be able to communicate to the cluster.
      
      The command used are:
 
    ```
-     kubectl config set-cluster CLUSTER_NAME --server=CLUSTER_URL
-     kubectl config set-context CONTEXT_NAME --cluster=CLUSTER_NAME -- user=USER_NAME
-     kubectl config use-context CONTEXT_NAME
-     kubectl config view
-```
+     aws eks --region REGION update-kubeconfig --name CLUSTER_NAME
+      kubectl config view
+      kubectl get node
+ ```
     
 ## References Used:
 
