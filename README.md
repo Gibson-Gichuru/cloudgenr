@@ -116,23 +116,37 @@ terraform destroy --var-file=tfvars/dev.tfvars
 
 ## Challenges Faced:
 
-1.  **Error:** While running ```terraform plan``` command, kept getting undeclared input variables for the eks.tf file
+1.  **Error:** While running ```terraform plan``` command, kept getting 
+    undeclared input variables for the eks.tf file
 
-    **Solution:** Creating tfvar folder with env variables defined and referencing them while running terraform scripts ```terraform 
-     plan --var-file=tfvars/devtfvars```
+    **Solution:** Creating tfvar folder with env variables defined and 
+    referencing them while running terraform scripts ```terraform 
+    plan --var-file=tfvars/devtfvars```
 
-2.  **Error:** Kubectl get nodes command failed. This resulted from the DNS resolution issue in the network when the API endpoint is not 
+2.  **Error:** Kubectl get nodes command failed. This resulted from the DNS 
+    resolution issue in the network when the API endpoint is not 
     accessible
 
-    **Solution:** Destroying the previous resources provisioned by Terraform. Recreating them, ensuring DNS server in the network 
-     resolves to the right hostname
+    **Solution:** Destroying the previous resources provisioned by Terraform. 
+    Recreating them, ensuring the DNS server in the network resolves to the right 
+    hostname
 
-3.  **Error:** While using Helm to deploy my solution to EKS, I keep receiving no host error when installing the Helm chart, I intend to 
-     debug this further, this is the last step to my deployment.
+3.   **Error**: Connection to server localhost:8080 was refused did you specify port?
+     
+     **Solution**: This occurs when Kubectl doesn't have the right permission to 
+     access the cluster. Once eks has been provisioned by Terraform,you set the 
+     kubeconfig to be able to communicate to the cluster.
+     
+     The command used are:
+
+   ```
+     kubectl config set-cluster CLUSTER_NAME --server=CLUSTER_URL
+     kubectl config set-context CONTEXT_NAME --cluster=CLUSTER_NAME -- user=USER_NAME
+     kubectl config use-context CONTEXT_NAME
+     kubectl config view
+```
     
-    **Solution:**  Work in progress
-
-
 ## References Used:
+
 * [Setting up EKS with EFS using Terraform]()
 * [Deploying application Using Helm in Kuberenetes](https://medium.com/avmconsulting-blog/deploying-applications-using-helm-in-kubernetes-b5c8b609e4b5)
