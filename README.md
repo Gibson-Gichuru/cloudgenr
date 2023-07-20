@@ -89,7 +89,7 @@ The RDS database instance is used by WordPress.
 
 -  Create a Helm chart for WordPress, which defines the deployment and Kubernetes services needed to run WordPress  ```helm install my-release my-repo/wordpress --set wordpressPassword=password ```
 
-- After succesful deployment,check the pods and see status
+- After successful deployment,check the pods and see the status
 kubectl get pods
 
 To access the wordpress site:
@@ -128,22 +128,29 @@ terraform destroy --var-file=tfvars/dev.tfvars
     accessible
 
     **Solution:** Destroying the previous resources provisioned by Terraform. 
-    Recreating them, ensuring the DNS server in the network resolves to the right 
+    Recreating them, ensuring the DNS server in the network resolves to the correct 
     hostname
 
 3.   **Error**: Connection to server localhost:8080 was refused did you specify port?
-     
-     **Solution**: This occurs when Kubectl doesn't have the right permission to 
-     access the cluster. Once eks has been provisioned by Terraform,you need to set the 
-     kubeconfig to be able to communicate to the cluster.
-     
-     The command used are:
 
+     ![](terraform/templates/screenshots//kubectl%20error.JPG)
+     
+     **Solution**: This occurs when Kubectl has no permission to 
+     access the cluster. Once eks has been provisioned by Terraform, you need to set the 
+     kubeconfig to communicate to the cluster.
+     
+     The command used is:
    ```
      aws eks --region REGION update-kubeconfig --name CLUSTER_NAME
       kubectl config view
       kubectl get node
  ```
+
+4.   **Error**: Trying to Access the deployed Wordpres site: Page not working
+
+       ![](terraform/templates/screenshots/wordpress%20not%20working.JPG)
+
+     **Solution**: WIP
     
 ## References Used:
 
