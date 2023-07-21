@@ -12,6 +12,7 @@
 ![](terraform/templates/screenshots/diagram.jpg)
 
 ## Summary:
+
 Deploying a multi-tier application (WordPress), using EKS (Elastic Kubernetes Service), EFS (Elastic File System), RDS (Relational Database Service) using Terraform and Helm.
 
 1. To deploy a web app using EKS, you set up EKS Cluster.
@@ -20,7 +21,7 @@ Deploying a multi-tier application (WordPress), using EKS (Elastic Kubernetes Se
 
 3. WordPress docker image to simulate the WordPress application
 
-4. Relation Database for the Wordpress.
+4. Relational Database for WordPress.
 
 ## Terraform Files and Setup
 
@@ -37,7 +38,7 @@ Deploying a multi-tier application (WordPress), using EKS (Elastic Kubernetes Se
 
 I set up the efs provisioner using Helm and the file contents are located in the efs-provisioner folder.
 
-**Steps to recreate:**
+**Command to setup Helm:**
 ```
 helm init
 ```
@@ -47,7 +48,7 @@ helm package efs-provisioner
 helm install efs-provisioner efs-provisioner-0.1.0.tgz
 ```
 
-Replace the cluster name with the cluster name created by Terraform.
+Replace the cluster name with your cluster name created by Terraform.
 
 Since the EKS Cluster will be created in the AWS console, and Helm is installed directly on your PC, for the two to communicate using Kubernetes you need to set up kubeconfig from your terminal
 
@@ -75,7 +76,7 @@ The RDS database instance is used by WordPress.
 - Clone the repo
 - Cd to the terraform folder
 - Run ```terraform init```, this command initializes the backend which is responsible for storing Terraform state.
-- Tfvar allows to separate  sensitive values for my case, the environment tag from the main code. Not including it in the Terraform  plan and apply command generates an error
+- Tfvar allows to separate  sensitive values for my case, the environment tag from the main code. Not including it in the Terraform  plan and apply the command generates an error
 
  ```
   terraform plan --var-file=tfvars/dev.tfvars &&  terraform apply --var-file=tfvars/dev.tfvars
@@ -89,10 +90,10 @@ The RDS database instance is used by WordPress.
 
 -  Create a Helm chart for WordPress, which defines the deployment and Kubernetes services needed to run WordPress  ```helm install my-release my-repo/wordpress --set wordpressPassword=password ```
 
-- After successful deployment,check the pods and see the status
+- After successful deployment,check the pods and see the status using;
 kubectl get pods
 
-To access the wordpress site:
+To access the external WordPress site:
 
 ```
 export SERVICE_IP=$(kubectl get svc --namespace default wp-demo-wordpress --include "{{ range (index .status.loadBalancer.ingress 0) }}{{ . }}{{ end }}")
@@ -100,7 +101,7 @@ echo "WordPress URL: http://$SERVICE_IP/"
 echo "WordPress Admin URL: http://$SERVICE_IP/admin"
 ```
 
-## Clean Up steps
+## Clean Up Steps
 
 - To destroy the nodes
 
