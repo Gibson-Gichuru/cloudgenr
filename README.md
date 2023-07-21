@@ -12,8 +12,7 @@
 ![](terraform/templates/screenshots/diagram.jpg)
 
 ## Summary:
-Deploying a multi-tier application (WordPress) using EKS (Elastic Kubernetes Service), EFS (Elastic File System), RDS (Relational Database Service)
-using Terraform and Helm.
+Deploying a multi-tier application (WordPress), using EKS (Elastic Kubernetes Service), EFS (Elastic File System), RDS (Relational Database Service) using Terraform and Helm.
 
 1. To deploy a web app using EKS, you set up EKS Cluster.
 
@@ -21,7 +20,7 @@ using Terraform and Helm.
 
 3. WordPress docker image to simulate the WordPress application
 
-4. Relation Database as per the instructions.
+4. Relation Database for the Wordpress.
 
 ## Terraform Files and Setup
 
@@ -58,6 +57,7 @@ kubectl get pods --all-namespaces
 helm package .
 helm install efs ./efs-provisioner-0.1.0.tgz --kubeconfig ~/pathtoconfigfile
 ```
+
 The command above is used to install Helm Chart called efs using a specific Kubernetes configuration file.
 
 Here's an example of the expected output screenshot:
