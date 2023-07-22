@@ -151,9 +151,10 @@ terraform destroy --var-file=tfvars/dev.tfvars
 
        ![](terraform/templates/screenshots/wordpress%20not%20working.JPG)
 
-     **Solution**: WIP
+     **Solution**: Allowing port 80 on the load balancer (WIP)
     
 ## References Used:
 
 * [Setting up EKS with EFS using Terraform]()
 * [Deploying application Using Helm in Kuberenetes](https://medium.com/avmconsulting-blog/deploying-applications-using-helm-in-kubernetes-b5c8b609e4b5)
+* [Creating AWS VPC for EKS Cluster](https://www.youtube.com/watch?v=nIIxexG7_a8&list=PLiMWaCMwGJXkeBzos8QuUxiYT6j8JYGE5)
