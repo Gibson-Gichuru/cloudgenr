@@ -1,9 +1,9 @@
 # Multi-Tier Application Deployment in EKS
 
 ## Prerequisites:
-- Terraform installation
+- Terraform installation on your pc
 - Kubectl and Minikube installation
-- Installing Helm
+- Installing Helm locally on your pc
 
 - Lucid for the architectural diagram
 
