@@ -108,7 +108,11 @@ echo "WordPress Admin URL: http://$SERVICE_IP/admin"
 ```
 kubectl delete nodes --all
 ```
+- To delete the storage class created earlier use:
 
+```
+kubectl delete -f efs-storageclass.yaml
+```
 - To delete the terraform files
 
 ```
@@ -117,44 +121,49 @@ terraform destroy --var-file=tfvars/dev.tfvars
 
 ## Challenges Faced:
 
-1.  **Error:** While running ```terraform plan``` command, kept getting 
+1.  **Error:** While running ```terraform plan``` command, kept getting
     undeclared input variables for the eks.tf file
 
-    **Solution:** Creating tfvar folder with env variables defined and 
-    referencing them while running terraform scripts ```terraform 
+    **Solution:** Creating tfvar folder with env variables defined and
+    referencing them while running terraform scripts ```terraform
     plan --var-file=tfvars/devtfvars```
 
-2.  **Error:** Kubectl get nodes command failed. This resulted from the DNS 
-    resolution issue in the network when the API endpoint is not 
+2.  **Error:** Kubectl get nodes command failed. This resulted from the DNS
+    resolution issue in the network when the API endpoint is not
     accessible
 
-    **Solution:** Destroying the previous resources provisioned by Terraform. 
-    Recreating them, ensuring the DNS server in the network resolves to the correct 
+    **Solution:** Destroying the previous resources provisioned by Terraform.
+    Recreating them, ensuring the DNS server in the network resolves to the correct
     hostname
 
 3.   **Error**: Connection to server localhost:8080 was refused did you specify port?
 
      ![](terraform/templates/screenshots//kubectl%20error.JPG)
-     
-     **Solution**: This occurs when Kubectl has no permission to 
-     access the cluster. Once eks has been provisioned by Terraform, you need to set the 
+
+     **Solution**: This occurs when Kubectl has no permission to
+     access the cluster. Once eks has been provisioned by Terraform, you need to set the
      kubeconfig to communicate to the cluster.
-     
+
      The command used is:
    ```
      aws eks --region REGION update-kubeconfig --name CLUSTER_NAME
       kubectl config view
       kubectl get node
  ```
+4. **Error**: After while deploying wordpress after installing Helm, pods being in pending state
+       ![Helm pending state]()
 
-4.   **Error**: Trying to Access the deployed Wordpres site: Page not working
+   **Solution**:
+
+5.   **Error**: Trying to Access the deployed Wordpres site: Page not working
 
        ![](terraform/templates/screenshots/wordpress%20not%20working.JPG)
 
      **Solution**: Allowing port 80 on the load balancer (WIP)
-    
+
 ## References Used:
 
-* [Setting up EKS with EFS using Terraform]()
 * [Deploying application Using Helm in Kuberenetes](https://medium.com/avmconsulting-blog/deploying-applications-using-helm-in-kubernetes-b5c8b609e4b5)
 * [Creating AWS VPC for EKS Cluster](https://www.youtube.com/watch?v=nIIxexG7_a8&list=PLiMWaCMwGJXkeBzos8QuUxiYT6j8JYGE5)
+
+* [Pods in pending state](https://sysdig.com/blog/kubernetes-pod-pending-problems/)
