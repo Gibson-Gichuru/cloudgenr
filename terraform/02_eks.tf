@@ -3,8 +3,6 @@ module "eks" {
   version = "19.15.3"
 
   cluster_name    = "my-eks"
-  # role_arn        = aws_iam_role.eks_cluster_admin.arn
-#   cluster_version = "1.23"
 
   cluster_endpoint_private_access = true
   cluster_endpoint_public_access  = true
