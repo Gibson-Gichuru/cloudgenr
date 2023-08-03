@@ -84,7 +84,7 @@ The RDS database instance is used by WordPress.
 
 ## Setting up Helm for WordPress Deployment
 
-- Initialize Helm by running ``helm init``
+- Initialize Helm 
 
 -  Adding the Helm repo by running ```helm repo helm repo add my-repo https://charts.bitnami.com/bitnami```
 
