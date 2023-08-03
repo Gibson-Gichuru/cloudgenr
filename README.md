@@ -84,11 +84,15 @@ The RDS database instance is used by WordPress.
 
 ## Setting up Helm for WordPress Deployment
 
-- Initialize Helm by running ``helm init``
+# Deployng Wordpress to EKS
+- Add helm repo to the environment
+helm repo add my-repo https://charts.bitnami.com/bitnami
 
--  Adding the Helm repo by running ```helm repo helm repo add my-repo https://charts.bitnami.com/bitnami```
+- Installing helm chart for wordpress
+helm install my-release my-repo/wordpress --set wordpressPassword=password
 
--  Create a Helm chart for WordPress, which defines the deployment and Kubernetes services needed to run WordPress  ```helm install my-release my-repo/wordpress --set wordpressPassword=password ```
+- After deployment check pods
+kubectl get pods
 
 - After successful deployment,check the pods and see the status using;
 kubectl get pods
@@ -145,15 +149,16 @@ terraform destroy --var-file=tfvars/dev.tfvars
      kubeconfig to communicate to the cluster.
 
      The command used is:
-   ```
+
+    ```
      aws eks --region REGION update-kubeconfig --name CLUSTER_NAME
       kubectl config view
       kubectl get node
- ```
-4. **Error**: After while deploying wordpress after installing Helm, pods being in pending state
+   ```
+4.  **Error**: After while deploying wordpress after installing Helm, pods being in pending state
        ![Helm pending state]()
 
-   **Solution**:
+    **Solution**: dependency issue with the persistant volume and storage class. (Work In progress)
 
 5.   **Error**: Trying to Access the deployed Wordpres site: Page not working
 
