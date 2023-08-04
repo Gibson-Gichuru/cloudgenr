@@ -1,3 +1,5 @@
+#creates AWS IAM role for user elcy
+#EKS Cluster Policy & EKS Service policy (to manage resources)
 resource "aws_iam_role" "eks_cluster_admin" {
   name = "eks-cluster-admin"
 
@@ -17,6 +19,7 @@ resource "aws_iam_role" "eks_cluster_admin" {
 EOF
 }
 
+#Attach maanged policy -permssiion to delete/create EKS cluster,managing node groups
 resource "aws_iam_role_policy_attachment" "eks_cluster_admin_policy" {
   role       = aws_iam_role.eks_cluster_admin.name
   policy_arn = "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy"

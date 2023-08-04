@@ -1,4 +1,4 @@
-#IAM roles to the node to use EFS
+#IAM policy grants permisson to EKS node to use Amazon File system (EFS) and amazon ec2 actions
 resource "aws_iam_policy" "node_efs_policy" {
   name        = "eks_node_efs-${var.env}"
   path        = "/"

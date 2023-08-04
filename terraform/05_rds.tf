@@ -12,7 +12,7 @@ resource "aws_db_instance" "wordpress"{
   skip_final_snapshot  = true
   iam_database_authentication_enabled =true
   backup_retention_period = 0
-  publicly_accessible = true
+  
 }
 
 # resource "kubernetes_service" "wordpress_service" {

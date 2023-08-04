@@ -1,3 +1,4 @@
+#Creates eks cluster with managed node group
 module "eks" {
   source  = "terraform-aws-modules/eks/aws"
   version = "19.15.3"
@@ -11,7 +12,7 @@ module "eks" {
   subnet_ids = module.vpc.private_subnets
   control_plane_subnet_ids = module.vpc.public_subnets
 
-  enable_irsa = true
+  enable_irsa = true #enabling IAM role for service account for eks cluster
 
   eks_managed_node_group_defaults = {
     instance_types = [var.instance_size]
@@ -64,7 +65,7 @@ resource "aws_security_group" "eks" {
   description = "Security group for EKS cluster"
    vpc_id      = module.vpc.vpc_id
 
-  # Add the necessary ingress and egress rules as per your requirements
+
   ingress {
     from_port   = 0
     to_port     = 65535

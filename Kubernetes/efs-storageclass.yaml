@@ -6,7 +6,7 @@ metadata:
 spec:
   accessModes:
     - ReadWriteMany
-  storageClassName: efsstorageclass 
+  storageClassName: efsstorageclass
   resources:
     requests:
       storage: 10Gi
@@ -36,5 +36,5 @@ spec:
     - tls
   csi:
     driver: efs.csi.aws.com
-    volumeHandle: fs-05df3d088db25bd43
+    volumeHandle: fs-0b67ae45922525c7b
 
