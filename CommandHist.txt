@@ -1,0 +1,1000 @@
+  258  git branch
+  259  terraform output subnet_ids
+  260  git add.
+  261  git add .
+  262  git commit -m "updated ecs task definition"
+  263  git branch
+  264  git push origin fix-infra
+  265  terraform plan -var-file=tfvars/dev.tfvars
+  266  terraform plan -var-file = tfvars/dev.tfvars
+  267  terraform  plan -var-file  tfvars/dev.tfvars
+  268  cd ansible
+  269  terraform  plan -var-file  tfvars/dev.tfvars
+  270  terraform apply  -var-file  tfvars/dev.tfvars
+  271  terraform plan  -var-file  tfvars/dev.tfvars
+  272  terraform apply  -var-file  tfvars/dev.tfvars
+  273  terraform workspace list
+  274  terraform apply  -var-file  tfvars/dev.tfvars
+  275  terraform destroy  -var-file  tfvars/dev.tfvars
+  276  terraform init  -var-file  tfvars/dev.tfvars
+  277  terraform plan  -var-file  tfvars/dev.tfvars&& terraform apply  -var-file  tfvars/dev.tfvars
+  278  terraform wokspace list
+  279  terraform workspace list
+  280  terraform init  -var-file  tfvars/dev.tfvars
+  281  terraform plan  -var-file  tfvars/dev.tfvars&& terraform apply  -var-file  tfvars/dev.tfvars
+  282  terraform workspace list
+  283  terraform workspace select dev
+  284  terraform plan  -var-file  tfvars/dev.tfvars&& terraform apply  -var-file  tfvars/dev.tfvars
+  285  aws configure
+  286  terraform plan  -var-file  tfvars/dev.tfvars
+  287  git add .
+  288  git commit -m "ecs cluster updated
+  289  git commit -m "ecs cluster updated"
+  290  git push origin fix-infra
+  291  terraform plan  -var-file  tfvars/dev.tfvars
+  292  terraform apply  -var-file  tfvars/dev.tfvars
+  293  terraform init  -var-file  tfvars/dev.tfvars
+  294  terraform apply  -var-file  tfvars/dev.tfvars
+  295  terraform init  -var-file  tfvars/dev.tfvars
+  296  terraform plan  -var-file  tfvars/dev.tfvars
+  297  terraform init  -var-file  tfvars/dev.tfvars
+  298  terraform plan  -var-file  tfvars/dev.tfvars
+  299  terraform init  -var-file  tfvars/dev.tfvars
+  300  terraform plan  -var-file  tfvars/dev.tfvars
+  301  terraform init  -var-file  tfvars/dev.tfvars
+  302  terraform plan  -var-file  tfvars/dev.tfvars
+  303  terraform apply  -var-file  tfvars/dev.tfvars
+  304  terraform init  -var-file  tfvars/dev.tfvars
+  305  terraform plan  -var-file  tfvars/dev.tfvars && terraform apply  -var-file  tfvars/dev.tfvars
+  306  terraform init  -var-file  tfvars/dev.tfvars
+  307  terraform plan  -var-file  tfvars/dev.tfvars && terraform apply  -var-file  tfvars/dev.tfvars
+  308  terraform init  -var-file  tfvars/dev.tfvars
+  309  terraform plan  -var-file  tfvars/dev.tfvars && terraform apply  -var-file  tfvars/dev.tfvars
+  310  git add .
+  311  git commit -m "updated config files"
+  312  terraform plan  -var-file  tfvars/dev.tfvars && terraform apply  -var-file  tfvars/dev.tfvars
+  313  cd ansible
+  314  cd ..
+  315  cd terraform
+  316  terraform plan  -var-file  tfvars/dev.tfvars && terraform apply  -var-file  tfvars/dev.tfvars
+  317  cd ansible
+  318  ls
+  319  cd terraform
+  320  terraform plan  -var-file  tfvars/dev.tfvars && terraform apply  -var-file  tfvars/dev.tfvars
+  321  cd ansible
+  322  ls
+  323  cd terraform
+  324  terraform destroy -var-file=tfvars/dev.tfvars
+  325  ls
+  326  cd terraform
+  327  terraform init
+  328  terraform plan -var-file=tfvars/dev.tfvars  && terraform apply -var-file=tfvars/dev.tfvars
+  329  terraform workspace list
+  330  terraform plan -var-file=tfvars/dev.tfvars  && terraform apply -var-file=tfvars/dev.tfvars
+  331  terraform show
+  332  clear
+  333  terraform import aws_instance.master i-0048d6a11942fd688
+  334  ls
+  335  cd terraform
+  336  terraform import aws_instance.master i-0048d6a11942fd688
+  337  terraform import aws_instance.master i-0048d6a11942fd688 -var-file="tfvars/dev.tfvars"
+  338  terraform import aws_instance.master i-0048d6a11942fd688 -var-file="tfvars/dev.tfvars
+  339  terraform import aws_instance.master i-0048d6a11942fd688 -var-file=tfvars/dev.tfvars
+  340  terraform import aws_instance.master i-0048d6a11942fd688 
+  341  terraform init
+  342  terraform import aws_instance.master i-0048d6a11942fd688 
+  343  terraform plan
+  344  terraform import 
+  345  terraform import aws_instance.master i-0048d6a11942fd688 -var-file=tfvars/dev.tfvars[D
+  346  terraform import aws_instance.master i-0048d6a11942fd688 
+  347  terraform import -var-file=tfvars/dev.tfvars  aws_instance.master i-0048d6a11942fd688
+  348  terraform plan -var-file=tfvars/dev.tfvars  
+  349  terraform import -var-file=tfvars/dev.tfvars  aws_instance.worker-node-01 i-0418fcd3394ea1508
+  350  terraform import -var-file=tfvars/dev.tfvars  aws_instance.worker1 i-04
+  351  terraform plan -var-file=tfvars/dev.tfvars  
+  352  terraform import -var-file=tfvars/dev.tfvars  aws_instance.worker2 i-0b2b6bcc212f1fd65
+  353  terraform plan -var-file=tfvars/dev.tfvars  
+  354  terraform import -var-file=tfvars/dev.tfvars  aws_security_group.everyshilling_sg sg-02c17bc724e0c96e6
+  355  terraform plan -var-file=tfvars/dev.tfvars  
+  356  terraform init
+  357  terraform plan -var-file=tfvars/dev.tfvars  
+  358  variable "vpc_id" {
+  359  terraform plan -var-file=tfvars/dev.tfvars  
+  360  terraform init
+  361  terraform plan -var-file=tfvars/dev.tfvars  
+  362  terraform import -var-file=tfvars/dev.tfvars  aws_lb_target_group.everyshilling_tg arn:aws:elasticloadbalancing:us-east-1:540828511394:targetgroup/every-shilling-dev-tg/9ebff338e609f3f6
+  363  terraform plan -var-file=tfvars/dev.tfvars  
+  364  t 
+  365  cd terraform
+  366  terraform import aws_subnet.private_subnet <subnet_id>
+  367  terraform plan -var-file=tfvars/dev.tfvars  
+  368  terraform init
+  369  terraform plan -var-file=tfvars/dev.tfvars  
+  370  clear
+  371  terraform plan -var-file=tfvars/dev.tfvars  
+  372  terraform init
+  373  terraform plan -var-file=tfvars/dev.tfvars  
+  374  terraform init
+  375  terraform plan -var-file=tfvars/dev.tfvars  
+  376  terraform init
+  377  terraform plan -var-file=tfvars/dev.tfvars  
+  378  clear
+  379  terraform plan -var-file=tfvars/dev.tfvars  
+  380  clear
+  381  terraform plan -var-file=tfvars/dev.tfvars
+  382  cd terraform
+  383  plan
+  384  terraform destroy  -var-file=tfvars/dev.tfvars
+  385  cd terraform
+  386  terraform destroy  -var-file=tfvars/dev.tfvars
+  387  cd terraform
+  388  histoy
+  389  history
+  390  terraform destroy  -var-file=tfvars/dev.tfvars
+  391  ansible-playbook -i inventory/hosts playbook.yml
+  392  chmod 400 popo.pem
+  393  ansible-playbook -i inventory/hosts playbook.yml
+  394  sudo ansible-playbook -i inventory/hosts playbook.yml
+  395  terraform init
+  396  terraform import aws_internet_gateway.my_gateway your_internet_gateway_id
+  397  terraform import aws_internet_gateway.my_gateway igw-05912c92679ce73c1
+  398  terraform import -var-file=tfvars/dev.tfvars aws_internet_gateway.my_gateway igw-05912c92679ce73c1
+  399  terraform import aws_vpc.vpc vpc-0f334f8fe6d854700
+  400  terraform import aws_network_acl.nacl acl-0511f1877cf603f56 
+  401  history
+  402  terraform import -var-file=tfvars/dev.tfvars aws_network_acl.nacl acl-0511f1877cf603f56 
+  403  terraform init
+  404  terraform import -var-file=tfvars/dev.tfvars aws_network_acl.nacl acl-0511f1877cf603f56 
+  405  history
+  406  terraform apply -var-file=tfvars/dev.tfvars
+  407  terraform destroy -var-file=tfvars/dev.tfvars
+  408  terraform apply -var-file=tfvars/dev.tfvars
+  409  terraform destroy -var-file=tfvars/dev.tfvars
+  410  terraform init
+  411  terraform apply -var-file=tfvars/dev.tfvars
+  412  ls
+  413  terraform init
+  414  ls
+  415  terraform init
+  416  aws configure
+  417  terraform init
+  418  terraform import module.swarm_master.aws_instance.master i-092e94a912388140d
+  419  terraform import aws_instance.master_instance i-092e94a912388140d
+  420  terraform init
+  421  terraform import aws_instance.master_instance i-092e94a912388140d
+  422  terraform import aws_instance.master_instance i-092e94a912388140d -var-file=tfvars/dev.tfvars
+  423  terraform import -var-file=tfvars/dev.tfvars  aws_instance.master_instance i-092e94a912388140d 
+  424  terraform workspace list
+  425  terraform workspace select dev
+  426  terraform workspace new dev
+  427  terraform workspace select  dev
+  428  terraform import -var-file=tfvars/dev.tfvars  aws_instance.master_instance i-092e94a912388140d 
+  429  terraform init
+  430  terraform plan -var-file=tfvars/dev.tfvars
+  431  terraform init
+  432  ls
+  433  terraform init
+  434  history
+  435  terraform plan -var-file=tfvars/dev.tfvars
+  436  terraform apply -var-file=tfvars/dev.tfvars
+  437  terraform init
+  438  terraform plan -var-file=tfvars/dev.tfvars
+  439  terraform apply -var-file=tfvars/dev.tfvars
+  440  terraform init
+  441  terraform apply -var-file=tfvars/dev.tfvars
+  442  terraform init
+  443  terraform apply -var-file=tfvars/dev.tfvars
+  444  terraform destroy -var-file=tfvars/dev.tfvars
+  445  terraform apply -var-file=tfvars/dev.tfvars
+  446  terraform init
+  447  terraform apply -var-file=tfvars/dev.tfvars && terraform plan -var-file=tfvars/dev.tfvars
+  448  ansible --version
+  449  ls
+  450  terraform init
+  451  terraform plan -var-file=tfvars/dev.tfvars
+  452  ansible-playbook -i inventory/hosts playbook.yml
+  453  terraform init
+  454  terraform plan -var-file=tfvars/dev.tfvars
+  455  ansible-playbook -i inventory/hosts playbook.yml
+  456  terraform init
+  457  terraform plan -var-file=tfvars/dev.tfvars
+  458  terraform apply -var-file=tfvars/dev.tfvars
+  459  terraform init
+  460  terraform apply -var-file=tfvars/dev.tfvars
+  461  ansible-playbook -i inventory/hosts playbook.yml
+  462  terraform destroy -var-file=tfvars/dev.tfvars
+  463  terraform init
+  464  terraform apply -var-file=tfvars/dev.tfvars
+  465  terraform init
+  466  terraform apply -var-file=tfvars/dev.tfvars
+  467  ansible-playbook -i inventory/hosts playbook.yml
+  468  terraform destroy -var-file=tfvars/dev.tfvars
+  469  terraform init
+  470  cd ~/.aws/credentials
+  471  sudo ~/.aws/credentials
+  472  nano ~/.aws/credentials
+  473  terraform init
+  474  terraform apply -var-file=tfvars/dev.tfvars
+  475  terraform init
+  476  terraform apply -var-file=tfvars/dev.tfvars
+  477  ansible-playbook -i inventory/hosts playbook.yml
+  478  fatal: [54.162.175.132]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '54.162.175.132' (ED25519) to the list of known hosts.\r\nno such identity: /home/elcy/downloads/AWS keys/popo.pem: No such file or directory\r\nubuntu@54.162.175.132: Permission denied (publickey).", "unreachable": true}
+  479  chmod 400 /home/elcy/downloads/AWS\ keys/popo.pem
+  480  cd 
+  481  chmod 400 /home/elcy/downloads/AWS\ keys/popo.pem
+  482  chmod 400 "/home/elcy/downloads/AWS\ keys/popo.pem"
+  483  ls
+  484  sudo nano popo.pem
+  485  ls
+  486  pwd
+  487  chmod 400 popo.pem
+  488  sudo chmod 400 popo.pem
+  489  pwd
+  490  ls
+  491  ls -l popo.pem
+  492  sudo chmod 400 popo.pem
+  493  pwd
+  494  cd home
+  495  ls
+  496  nano popo.pem
+  497  cat popo.pem
+  498  sudo cat popo.pem
+  499  terraform destroy -var-file=tfavrs/dev.tfvars
+  500  terraform destroy  -var-file=tfvars/dev.tfvars
+  501  aws ec2 describe-network-interfaces eni-0ce34cfddf0369b2f
+  502  terraform init
+  503  terraform plan -var-files=tfvars/dev.tfvars
+  504  terraform plan -var-file=tfvars/dev.tfvars
+  505  terraform apply -var-file=tfvars/dev.tfvars
+  506  terraform init
+  507  terraform apply -var-file=tfvars/dev.tfvars
+  508  terraform destroy -var-file=tfvars/dev.tfvars
+  509  terraform init
+  510  terraform apply -var-file=tfvars/dev.tfvars
+  511  sshkeygen
+  512  ssh-keygen
+  513  cd
+  514  cd ~/home/elcy/.ssh/id_rsa.pub
+  515  ls
+  516  ls -la
+  517  cd .ssh
+  518  ls
+  519  sudo nano id_rsa.pub
+  520  cat id_rsa.pub
+  521  terraform init
+  522  cd terraform
+  523  terraform init
+  524  terraform plan -var-file=tfvars/dev.tfvars
+  525  terraform workspace list
+  526  terraform workspace create dev
+  527  terraform workspace new dev
+  528  terraform workspace list
+  529  terraform ini
+  530  terraform plan -var-file=tfvars/dev.tfvars
+  531  terraform apply -var-file=tfvars/dev.tfvars
+  532  terraform plan -var-file=tfvars/dev.tfvars
+  533  terraform apply -var-file=tfvars/dev.tfvars
+  534  cd 
+  535  /terraform_script.sh
+  536  ls
+  537  ./terraform_script.sh
+  538  ls
+  539  cd terraform
+  540  /terraform_script.sh
+  541  ./terraform_script.sh
+  542  chmod +x terraform_script.sh
+  543  ./terraform_script.sh
+  544  dos2unix terraform_script.sh
+  545  tr -d '\r' < terraform_script.sh > terraform_script_unix.sh
+  546  chmod +x terraform_script_unix.sh
+  547  ./terraform_script_unix.sh
+  548  git status
+  549  terraform init
+  550  cd terraform
+  551  terraform init
+  552  terraform plan  -var-file=tfvars/dev.tfvars~
+  553  terraform plan  -var-file=tfvars/dev.tfvars
+  554  terraform apply  -var-file=tfvars/dev.tfvars
+  555  ansible-playbook -i inventory/hosts playbook.yml
+  556  ls
+  557  cd 
+  558  ls
+  559  ansible-playbook -i inventory/hosts playbook.yml
+  560  terraform destroy -var-file=tfvars/dev.tfvars
+  561  cd terraform
+  562  terraform destroy -var-file=tfvars/dev.tfvars
+  563  terraform apply -var-file=tfvars/dev.tfvars
+  564  terraform init
+  565  terraform apply -var-file=tfvars/dev.tfvars
+  566  terraform destroy  -var-file=tfvars/dev.tfvars
+  567  terraform apply -var-file=tfvars/dev.tfvars
+  568  terraform destroy -var-file=tfvars/dev.tfvars
+  569  terraform init
+  570  terraform apply -var-file=tfvars/dev.tfvars
+  571  terraform init
+  572  terraform apply -var-file=tfvars/dev.tfvars
+  573  terraform init
+  574  terraform apply -var-file=tfvars/dev.tfvars
+  575  ls
+  576  cd 
+  577  ls -la
+  578  cd .ssh
+  579  ls
+  580  pwd
+  581  ls
+  582  cd id_rsa
+  583  ls
+  584  ansible-playbook -i inventory/hosts playbook.yml
+  585  chmod 400 popo.pem
+  586  pwd
+  587  ansible-playbook -i inventory/hosts playbook.yml
+  588  ansible -m ping all -vvv
+  589  ansible-playbook -i inventory/hosts playbook.yml
+  590  sudo service ssh status
+  591  grep Port /etc/ssh/sshd_config
+  592  ansible all -m ping -vvv
+  593  ansible masters  -m ping -vvv
+  594  chmod u+x inventory
+  595  ansible-inventory -i inventory.ini --list
+  596  ls
+  597  ansible-inventory -i inventory.ini --list
+  598  ansible-inventory -i inventory --list
+  599  ansible-playbook -i inventory/hosts playbook.yml
+  600  ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+  601  ssh-keygen -t rsa -b 4096 -C "elcymao@gmail.com"
+  602  ssh-copy-id -i ~/.ssh/id_rsa.pub user@ec2-instance-ip
+  603  ssh-copy-id -i ~/.ssh/id_rsa.pub ubuntu@18.234.124.153
+  604  cd
+  605  cd /etc/ssh/sshd_config
+  606  cd .ssh
+  607  ls
+  608  pwd
+  609  echo ~/.ssh/id_rsa.pub
+  610  cd backend-everyshilling-Terraform
+  611  cd 
+  612  cd backend-everyshilling-Terraform
+  613  ls
+  614  cd backend-everyshilling
+  615  a
+  616  nsible-playbook -i inventory/hosts playbook.yml
+  617  ansible-playbook -i inventory/hosts playbook.yml
+  618  cd terraform
+  619  ls
+  620  ansible-playbook -i inventory/hosts playbook.yml
+  621  teraform destroy -var-file=tfvars/dev.tfvars
+  622  cd terraform
+  623  terraform destroy -var-file=tfvars/dev.tfvars
+  624  teraform i nit
+  625  teraform init
+  626  terraform init
+  627  terraform apply  -var-file=tfvars/dev.tfvars
+  628  terraform destroy  -var-file=tfvars/dev.tfvars
+  629  ssh-copy-id -i ~/elcy/.ssh/id_rsa.pub ubuntu@18.234.124.153
+  630  echo ~/.ssh/id_rsa.pub
+  631  chmod 600 ~/.ssh/id_rsa.pub
+  632  ssh-copy-id -i ~/elcy/.ssh/id_rsa.pub ubuntu@18.234.124.153
+  633  ssh-copy-id -i ~/.ssh/id_rsa.pub ubuntu@18.234.124.153
+  634  aws configure list
+  635  terraform output -json swarm_manager_ip | jq -r
+  636  terraform init
+  637  cd terraform
+  638  terraform init
+  639  ls
+  640  terraform_script_unix.sh
+  641  ./terraform_script_unix.sh
+  642  terraform destroy -var-file=tfvars/dev.tfvars
+  643  terraform init 
+  644  cd terraform
+  645  terraform init 
+  646  terrform plan
+  647  terraform plan
+  648  terraform init 
+  649  terraform plan -var-file=tfvars/dev.tfvars
+  650  cd ..
+  651  aws configure
+  652  ~/.aws/credentials
+  653  sudo ~/.aws/credentials
+  654  cd 
+  655  ~/.aws/credentials
+  656  sudo ~/.aws/credentials
+  657  aws configure
+  658  cd terraform
+  659  terraform init
+  660  terraform apply  -var-file=tfvars/dev.tfvars
+  661  terraform destroy  -var-file=tfvars/dev.tfvars
+  662  terraform-docs -c .terraform-docs.yml ./tf-code/
+  663  curl -sSLo ./terraform-docs.tar.gz https://terraform-docs.io/dl/v0.16.0/terraform-docs-v0.16.0-$(uname)-amd64.tar.gz
+  664  aws configure
+  665  terraform init
+  666  cd terraform
+  667  ls
+  668  terraform init
+  669  terraform plan && terraform apply
+  670  terraform plan -var-file=varfile.tfvars
+  671  ls
+  672  terraform plan -var-file=/.tfvars
+  673  terraform plan -var-file=/tfvars/dev.tfvars 
+  674  terraform plan -var-file=tfvars/dev.tfvars 
+  675  terraform apply -var-file=tfvars/dev.tfvars 
+  676  terraform destroy -var-file=tfvars/dev.tfvars 
+  677  aws configure
+  678  terraform init
+  679  cd terrafom
+  680  terraform init
+  681  terraform plan terraform plan -var-file=tfvars/dev.tfvars
+  682  terraform plan -var-file=tfvars/dev.tfvars
+  683  terraform apply -var-file=tfvars/dev.tfvars
+  684  terraform destroy -var-file=tfvars/dev.tfvars
+  685  terraform init
+  686  terraform apply  -var-file=tfvars/dev.tfvars
+  687  terraform destroy  -var-file=tfvars/dev.tfvars
+  688  echo  AWS_ACCESS_KEY_ID
+  689  aws configure
+  690  nano ~/.aws/credentials
+  691  source venv/bin/activate
+  692  sudo apt update
+  693  sudo apt install python3-venv
+  694  python3 -m venv myenv
+  695  source myenv/bin/activate
+  696  pip install -r requirements.txt
+  697  cd terraform 
+  698  terraform init
+  699  terraform plan
+  700  terraform plan -var-file=dev.tfvars
+  701  terraform plan -var-file=tfvars/dev.tfvars
+  702  terraform apply -var-file=tfvars/dev.tfvars
+  703  cd ..
+  704  ansible-playbook ssh_ec2.yml
+  705  echo export AWS_ACCESS_KEY_ID="AKIAX327EFSRFSDVILAN"
+  706  echo export AWS_SECRET_ACCESS_KEY="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"
+  707  ls
+  708  ansible-playbook playbook.yml
+  709  ansible-doc -l
+  710  ip install boto
+  711  pip
+  712  pippi
+  713  pp
+  714  pip install boto
+  715  source myenv/bin/activate
+  716  pip3 install boto
+  717  pip3 install boto3
+  718  ansible-playbook playbook.yml
+  719  ansible-playbook -i inventory.ini playbook.yml
+  720  ansible-galaxy collection install community.aws
+  721  ansible-doc -l
+  722  source myenv/bin/activate
+  723  ansible-doc -l
+  724  nsib;
+  725  terraform init
+  726  cd terraform
+  727  terraform init
+  728  history
+  729  terraform plan 
+  730  cd ..
+  731  cd ansible 
+  732  ls
+  733  source myenv/bin/activate
+  734  history
+  735  cd terraform
+  736  terraform destroy -var-file=tfvars/dev.tfvars
+  737  cd 
+  738  grep -i Private ~/.ssh/Popo.pem
+  739  .ssh
+  740  cd .ssh
+  741  ls
+  742  cd ..
+  743  cd private
+  744  ls
+  745  pwd
+  746  grep -i Private ~/home/elcy/Popo.pem
+  747  grep -i Private ~/Popo.pem
+  748  grep -i Private ~/keys/Popo.pem
+  749  grep -i Private ~/keys/popo.pem
+  750  source myenv/bin/activate
+  751  ansible-playbook playbook.yml
+  752  git status
+  753  history
+  754  terraform destroy -var-file=tfvars/dev.tfvars 
+  755  cd terraform
+  756  terraform destroy -var-file=tfvars/dev.tfvars 
+  757  terraform init
+  758  terraform plan -var-file=tfvars/dev.tfvars 
+  759  terraform apply -var-file=tfvars/dev.tfvars 
+  760  cd ..
+  761  ls
+  762  cd ansible
+  763  ansible-playbook add-key.yml 
+  764  -i ansible_hosts 
+  765  --user
+  766  ansible-playbook add-key.yml 
+  767  -i ansible_hosts 
+  768  --user
+  769  ansible hosts_to_add_key -m ping
+  770  ansible hosts_to_add_key -m ping -i ansible_hosts
+  771  ansible hosts_to_add_key -m ping -i ansible_hosts --user ubuntu --key-file  ~/home/elcy/keys/popo.pem
+  772  ansible hosts_to_add_key -m ping -i ansible_hosts --user ubuntu --key-file ~/keys/popo.pem
+  773  ansible-playbook add-key.yml -i ansible_hosts --user ubuntu --key-file ~/keys/popo.pem -e "key=~/.ssh/id_rsa.pub"
+  774  ssh ubuntu@54.204.197.135
+  775  ansible-playbook playbook.yml -i ansible_hosts --user ubuntu --key-file ~/keys/popo.pem -e "key=~/.ssh/id_rsa.pub"
+  776  grep -i Private ~/.ssh/Popo.pem
+  777  history
+  778  cd ..
+  779  cd terrafom
+  780  cd terraform
+  781  terraform destroy -var-file=tfvars/dev.tfvars
+  782  cd terraform
+  783  terraform init
+  784  terraform plan -
+  785  terraform apply --var-file=tfvars/dev.tfvars
+  786  terraform destroy --var-file=tfvars/dev.tfvars
+  787  cd ..
+  788  aws configure 
+  789  ls
+  790  cd 
+  791  apt-get upgrade -y
+  792  cd ..
+  793  apt-get upgrade -y
+  794  su 
+  795  su
+  796  terraform init
+  797  terraform plan
+  798  clear
+  799  terraform plan
+  800  terraform plan --var-file=tfvars/dev.tfvar
+  801  terraform plan --var-file=tfvars/dev.tfvars
+  802  clear
+  803  terraform init
+  804  cd terraform
+  805  terraform init
+  806  terraform apply
+  807  terraform --version
+  808  terraform init
+  809  terraform apply
+  810  aws eks update-kubeconfig --name my-eks --region us-east-1
+  811  terraform apply
+  812  terraform plan
+  813  aws eks update-kubeconfig --name my-eks --region us-east-1
+  814  kuectly get nodes
+  815  kubectl get nodes
+  816  terraform plan 
+  817  terraform init -upgrade
+  818  terraform plan 
+  819  yes
+  820  terraform plan 
+  821  clear
+  822  terraform apply
+  823  terraform destroy
+  824  cd ..
+  825  sudo apt install -y conntrack
+  826  curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+  827  sudo curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+  828  chmod +x ./minikube
+  829  sudo chmod +x ./minikube
+  830  sudo minikube config set driver docker
+  831  sudo mv ./minikube /usr/local/bin/
+  832  sudo minikube config set driver docker
+  833  sudo curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+  834  sudo chmod +x ./kubectl
+  835  sudo mv ./kubectl /usr/local/bin/
+  836  sudo kubectl
+  837  kubectl config use-context minikube
+  838  sudo kubectl config use-context minikube
+  839  minikube
+  840  kubectl
+  841  kubectl config use-context minikube 
+  842  kubectl config get-contexts
+  843  kubectl get nodes
+  844  terraform 
+  845  terraform  apply
+  846  cd terraform
+  847  terraform  apply
+  848  terraform  apply --var-file=tfvars/dev.tfvars
+  849  terraform  init
+  850  terraform  apply --var-file=tfvars/dev.tfvars
+  851  aws configure
+  852  terraform  apply --var-file=tfvars/dev.tfvars
+  853  terraform  destroy --var-file=tfvars/dev.tfvars
+  854  terraform apply  --var-file=tfvars/dev.tfvars
+  855  history
+  856  cd ..
+  857  helm init
+  858  sudo curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
+  859  sudo 700 get_helm.sh
+  860  sudo chmod 700 get_helm.sh
+  861  ./get_helm.sh
+  862  helm version
+  863  helm init
+  864  helm repo add aws-efs-csi-driver https://kubernetes-sigs.github.io/aws-efs-csi-driver
+  865  helm repo update
+  866  helm install aws-efs-csi-driver/aws-efs-csi-driver --generate-name --set efsFileSystemId=fs-05df3d088db25bd43
+  867  kubectl get pods
+  868  clear
+  869  helm create efs-provisioner
+  870  helm package efs-provisioner
+  871  helm install efs-provisioner efs-provisioner-0.1.0.tgz
+  872  aws eks update-kubeconfig --name <cluster-name> --region <region>
+  873  aws eks update-kubeconfig --name my-eks --region us-east-1
+  874  kubectl get pods --all-namespaces
+  875  helm package .
+  876  cd efs-provisioner 
+  877  helm package .
+  878  helm ls --kubeconfig <path-to-kubeconfig>
+  879  helm install my-release ./my-chart-0.1.0.tgz --kubeconfig ~/.kube/config
+  880  helm install my-release ./efs-provisioner-0.1.0.tgz --kubeconfig ~/.kube/config
+  881  ls
+  882  pwd
+  883  find / -name efs-provisioner-0.1.0.tgz 
+  884  sudo find / -name efs-provisioner-0.1.0.tgz 
+  885  helm install efs ./efs-provisioner-2.1.0.tgz --kubeconfig ~/.kube/config
+  886  helm install efs ./efs-provisioner-0.1.0.tgz --kubeconfig ~/.kube/config
+  887  helm list --kubeconfig ~/.kube/config
+  888  helm install wordpress-efs ./efs-provisioner-0.1.0.tgz --kubeconfig ~/.kube/config
+  889  helm package .
+  890  helm install storage-efs ./efs-provisioner-0.1.0.tgz --kubeconfig ~/.kube/config
+  891  helm ls --kubeconfig <path-to-kubeconfig> ~/.kube/config
+  892  helm ls --kubeconfig  ~/.kube/config
+  893  kubectl get pods
+  894  history
+  895  terraform  apply --var-file=tfvars/dev.tfvars
+  896  cd ..
+  897  cd terraform
+  898  terraform  apply --var-file=tfvars/dev.tfvars
+  899  terraform init
+  900  terraform import RESOURCE_TYPE.RESOURCE_NAME RESOURCE_ID
+  901  terraform import aws_efs_file_system.kube fs-05df3d088db25bd43
+  902  terraform import aws_efs_file_system.kube fs-05df3d088db25bd43 --var-file=tfvars/dev.tfvars
+  903  terraform import aws_efs_file_system.kube fs-05df3d088db25bd43
+  904  terraform init
+  905  kubectl get nodes
+  906  kubectl get all
+  907  kubectl get service service/wordpress-efs-efs-provisioner
+  908  kubectl get service wordpress-efs-efs-provisioner
+  909  kubectl edit service wordpress-efs-efs-provisioner
+  910  kubectl get service wordpress-efs-efs-provisioner
+  911  kubectl edit service wordpress-efs-efs-provisioner
+  912  export EDITOR=nano kubectl edit service wordpress-efs-efs-provisioner
+  913  export EDITOR=nano'
+  914  export EDITOR=nano
+  915  kubectl edit service wordpress-efs-efs-provisioner
+  916  CLEAR
+  917  clear
+  918  kubectl get service wordpress-efs-efs-provisioner
+  919  kubectl get service wordpress-efs-efs-provisioner -o json | jq -r '.metadata.namespace'
+  920  kubectl edit service wordpress-efs-efs-provisioner
+  921  terraform  apply --var-file=tfvars/dev.tfvars
+  922  kubectl cluster info
+  923  kubectl cluster-info
+  924  git status
+  925  git add   terraform/templates
+  926  git commit -m "proof of tasks"
+  927  git push origin main
+  928  git status
+  929  kubectl apply -f efs-pvc.yaml
+  930  kubectl get pvc
+  931  kubectl get pv
+  932  kubectl get storageclasses
+  933  kubectl describe pvc efs-pvc.yaml
+  934  kubectl get pvc --all-namespaces
+  935  kubectl apply -f efs-pv.yaml
+  936  kubectl get storageclasses
+  937  kubectl get pv
+  938  kubectl apply -f efs-pvc.yaml
+  939  kubectl get pvc
+  940  kubectl delete pvc efs-pvc
+  941  kubectl get pv
+  942  kubectl delete pv efs-pv
+  943  kubectl apply  -f efs-pv.yaml
+  944  kubectl get pv
+  945  kubectl get pvc
+  946  kubectl get pv
+  947  kubectl describe pvc efs-pvc
+  948  kubectl describe pv efs-pv
+  949  kubectl get namespaces
+  950  kubectl logs -l app=efs-csi-controller default
+  951  kubectl logs -l app=efs-csi-controller -n default
+  952  kubectl logs -l app=efs-csi-controller -n kube-system
+  953  kubectl logs -l app=efs-csi-controller -n kube-public
+  954  kubectl logs -l app=efs-csi-controller -n kube-node-lease
+  955  terraform  destroy --var-file=tfvars/dev.tfvars
+  956  cd terraform
+  957  terraform  destroy --var-file=tfvars/dev.tfvars
+  958  history
+  959  history > command_history.txt
+  960  cd terraform
+  961  terraform init 
+  962  terraform plan --var-file=tfvars/dev.tfvars
+  963  terraform apply --var-file=tfvars/dev.tfvars
+  964  terraform destroy --var-file=tfvars/dev.tfvars
+  965  cd terraform
+  966  terraform destroy --var-file=tfvars/dev.tfvars
+  967  terraform apply --var-file=tfvars/dev.tfvars
+  968  terraform init
+  969  terraform apply --var-file=tfvars/dev.tfvars
+  970  kubectl cluster-info --kubeconfig=~/.kube/config
+  971  cd 
+  972  kubectl cluster-info --kubeconfig=~/.kube/config
+  973  kubectl cluster-info --kubeconfig ~/.kube/config
+  974  cd 7TS
+  975  ls
+  976  helm repo add my-repo https://charts.bitnami.com/bitnami
+  977  helm install my-release my-repo/wordpress --set wordpressPassword=password
+  978  helm install my-release my-repo/wordpress --set wordpressPassword=password  --kubeconfig ~/.kube/config
+  979  git status
+  980  git remote -v
+  981  git pull
+  982  git config pull.rebase 
+  983  git pull
+  984  In its default mode, git pull is shorthand for git fetch followed by git merge FETCH_HEAD.
+  985  When you do a git pull origin master,
+  986  git pull performs a merge, which often creates a merge commit. Therefore, by default, pulling from the remote is not a harmless operation: it can create a new commit SHA hash value that didn’t exist before. This behavior can confuse a user, because what feels like it should be a harmless download operation actually changes the commit history in unpredictable ways.
+  987  To avoid this, you need
+  988  git pull --ff-only
+  989  git pull
+  990  git config pull.rebase false 
+  991  git pull
+  992  git commit -m "updated docs"
+  993  git pull
+  994  git stash
+  995  git pull
+  996  git fetch
+  997  git sttaus
+  998  git status
+  999  git branch
+ 1000  git branch -b main
+ 1001  git checkout -b main
+ 1002  git checkout  main
+ 1003  git push origin main
+ 1004  git push origin -u main
+ 1005  terraform apply --var-file=tfvars/dev.tfvars
+ 1006  cd terraform
+ 1007  terraform apply --var-file=tfvars/dev.tfvars
+ 1008  terraform destroy --var-file=tfvars/dev.tfvars
+ 1009  terraform apply --var-file=tfvars/dev.tfvars
+ 1010  cd ..
+ 1011  kubectl get nodes
+ 1012  aws eks describe-cluster --name my-eks --query "cluster.status"
+ 1013  sudo systemctl restart kubelet
+ 1014  sudo service kubelet restart
+ 1015  sudo restart kubelet
+ 1016  kubectl get nodes
+ 1017  cd ~/.kube/
+ 1018  kubectl config current-context
+ 1019  kubectl cluster-info
+ 1020  sudo systemd-resolve --flush-caches
+ 1021  sudo service networking stop
+ 1022  sudo service my-eks stop
+ 1023  cd 
+ 1024  kubectl get nodes
+ 1025  kubectl delete nodes --all
+ 1026  kubectl get nodes
+ 1027  cd terraform
+ 1028  terraform init
+ 1029  terraform plan --var-file=tfvars/dev.tfvars && terraform apply --var-file=tfvars/dev.tfvars
+ 1030  kube config set-cluster my-eks  --server=https://61BFAA7EA40CC6345ECC9C07BAC375AE.gr7.us-east-1.eks.amazonaws.com
+ 1031  kubectl config set-cluster my-eks  --server=https://61BFAA7EA40CC6345ECC9C07BAC375AE.gr7.us-east-1.eks.amazonaws.com
+ 1032  kubectl config set-context CONTEXT_NAME --cluster=CLUSTER_NAME --user=USER_NAME
+ 1033  kubectl config set-context CONTEXT_NAME --cluster=my-eks --user=ubuntu
+ 1034  kubectl config use-context CONTEXT_NAME
+ 1035  kubectl config view
+ 1036  kubectl get nodes
+ 1037  sudo kubectl get nodes
+ 1038  aws eks --region REGION update-kubeconfig --name CLUSTER_NAME
+ 1039  aws eks --region REGION update-kubeconfig --name my-eks
+ 1040  aws eks --region us-east-1 update-kubeconfig --name my-eks
+ 1041  kubectl config view
+ 1042  kubectl get nodes
+ 1043  helm repo add my-repo https://charts.bitnami.com/bitnami
+ 1044  helm repo wordpress my-repo https://charts.bitnami.com/bitnami
+ 1045  helm install my-release my-repo/wordpress --set wordpressPassword=password
+ 1046  export SERVICE_IP=$(kubectl get svc --namespace default wp-demo-wordpress --include "{{ range (index .status.loadBalancer.ingress 0) }}{{ . }}{{ end }}")
+ 1047  echo "WordPress URL: http://$SERVICE_IP/"
+ 1048  echo "WordPress Admin URL: http://$SERVICE_IP/admin"
+ 1049  export SERVICE_IP=$(kubectl get svc --namespace default my-release-wordpress --template "{{ range (index .status.loadBalancer.ingress 0) }}{{ . }}{{ end }}")
+ 1050  echo "WordPress Admin URL: http://$SERVICE_IP/admin"
+ 1051  kubectl get pods
+ 1052  kubectl delete nodes
+ 1053  kubectl delete pods
+ 1054  kubectl delete pods my-release-mariadb-0
+ 1055  kubectl delete pods my-release-wordpress-794745cb58-cd7qm
+ 1056  terraform destroy --var-file=tfvars/dev.tfvars
+ 1057  .03
+ 1058  terraform destroy --var-file=tfvars/dev.tfvars
+ 1059  kubeadm reset
+ 1060  cd ..
+ 1061  cd 
+ 1062  sudo apt-get purge kubeadm kubectl kubelet kubernetes-cni kube*  
+ 1063  minikube --version
+ 1064  docker --version
+ 1065  minikube version
+ 1066  docker --version
+ 1067  kubectl --version
+ 1068  kubectl version
+ 1069  kubectl get nodes
+ 1070  sudo apt remove kubectl
+ 1071  which kubectl
+ 1072  sudo rm /usr/local/bin/kubectl
+ 1073  kubectl version
+ 1074  echo "$(cat kubectl.sha256)  kubectl" | sha256sum --check
+ 1075  sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+ 1076  kubectl version --client
+ 1077  kubectl get nodes
+ 1078  curl http://localhost:8080/api?timeout=32s
+ 1079  kubectl cluster-info
+ 1080  kubectl config current-context
+ 1081  kubectl config view
+ 1082  minikube stop
+ 1083  minikube start
+ 1084  sc query docker
+ 1085  systemctl status docker
+ 1086  sudo usermod -aG docker $USER
+ 1087  docker --version
+ 1088  docker ps
+ 1089  minikube stop
+ 1090  minikube delete
+ 1091  minikube cleanup
+ 1092  wsl --list
+ 1093  curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+ 1094  sudo chmod +x ./minikube
+ 1095  sudo mv ./minikube /usr/local/bin/
+ 1096  minikube config set driver docker
+ 1097  kubectl config use-context minikube
+ 1098  curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+ 1099  chmod +x ./kubectl
+ 1100  sudo mv ./kubectl /usr/local/bin
+ 1101  kubectl
+ 1102  kubectl config use-context minikube
+ 1103  kubectl get nodes
+ 1104  export KUBECONFIG=/etc/kubernetes/admin.conf
+ 1105  aws configure
+ 1106  terraform destroy --var-file=tfvars/dev.tfvars
+ 1107  cd terraform
+ 1108  terraform destroy --var-file=tfvars/dev.tfvars
+ 1109  sudo sudo mysqldump -u wp_database_user -p wp_database_name > dump.sql
+ 1110  cd
+ 1111  sudo apt update
+ 1112  sudo apt install mysql-client
+ 1113  sudo mysqldump -u your_wp_database_user -p your_wp_database_name > dump.sql
+ 1114  sudo mysqldump -u wp_database_user -p wp_database_name > dump.sql
+ 1115  sudo service mysql start
+ 1116  sudo find / -type s
+ 1117  clear
+ 1118  sudo mysqldump -u wp_database_user -p wp_database_name > dump.sql
+ 1119  cd 
+ 1120  apt-get install mysql-server mysql
+ 1121  sudo apt-get install mysql-server mysql
+ 1122  sudo /etc/init.d/mysql start
+ 1123  sudo service mysql start
+ 1124  /etc/mysql/mysqld.conf.d/mysqld.conf 
+ 1125  cd /etc/mysql/mysqld.conf.d/mysqld.conf 
+ 1126  sudo nano /etc/mysql/mysqld.conf.d/mysqld.conf
+ 1127  sudo service mysql start
+ 1128  sudo /etc/init.d/mysql start
+ 1129  sudo apt update
+ 1130  sudo service mysql status
+ 1131  cd 
+ 1132  ls -la /var/run/mysqld/mysqld.sock
+ 1133  ls
+ 1134  sudo /etc/init.d/mysql start
+ 1135  sudo tail -n 50 /var/log/mysql/error.log
+ 1136  sudo apt install mysql-server
+ 1137  mysql --version
+ 1138  systemctl status mysql
+ 1139  service mysql status
+ 1140  service mysql start
+ 1141  sudo service mysql start
+ 1142  sudo nano /etc/init.d/mysql
+ 1143  sudo service mysql start
+ 1144  sudo service mysql status
+ 1145  sudo mysqldump -u wp_database_user -p wp_database_name > dump.sql
+ 1146  sudo mysqldump -u user -p database > dump.sql
+ 1147  sudo mysqldump -u user -p password > dump.sql
+ 1148  sudo mysqldump -u user -p database > dump.sql
+ 1149  mysql -u user -p
+ 1150  sudo mysqldump -u user  > dump.sql
+ 1151  sudo mysqldump -u user -p  > dump.sql
+ 1152  docker-compose up -d
+ 1153  aws configure
+ 1154  aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 540828511394.dkr.ecr.us-east-1.amazonaws.com
+ 1155  cd terraform
+ 1156  terraform init
+ 1157  terraform plan -var-file=dev.tfvars
+ 1158  terraform plan -var-file=tfvars/dev.tfvars
+ 1159  terraform apply -var-file=tfvars/dev.tfvars
+ 1160  cd..
+ 1161  helm init
+ 1162  helm --help
+ 1163  helm init
+ 1164  cd Kuberentes
+ 1165  ls
+ 1166  cd ..
+ 1167  ls
+ 1168  cd Kubernetes
+ 1169  helm install aws-efs-csi-driver/aws-efs-csi-driver --name efs-provisioner   --set enableIAM=true   --set serviceAccount.controller.create=false   --set serviceAccount.controller.name=efs-provisioner   --set controller.serviceAccount.roleArn=arn:aws:iam::120651511769:user/elcymao
+ 1170  helm repo add aws-efs-csi-driver https://kubernetes-sigs.github.io/aws-efs-csi-driver
+ 1171  helm repo update
+ 1172  helm install aws-efs-csi-driver/aws-efs-csi-driver --name efs-provisioner   --namespace kube-system   --set enableIAM=true
+ 1173  helm install efs-provisioner aws-efs-csi-driver/aws-efs-csi-driver   --namespace kube-system   --set enableIAM=true
+ 1174  kubectl --version
+ 1175  helm repo add aws-efs-csi-driver https://kubernetes-sigs.github.io/aws-efs-csi-driver
+ 1176  helm repo update
+ 1177  helm install efs-provisioner aws-efs-csi-driver/aws-efs-csi-driver   --namespace kube-system   --set enableIAM=true
+ 1178  kubectl get pods -n kube-system | grep efs-provisioner
+ 1179  kubectl get deployments -n kube-system
+ 1180  kubectl describe pods  -n kube-system
+ 1181  kubectl apply -f efs-storageclass.yaml
+ 1182  kubectl get all
+ 1183  cd ..
+ 1184  helm repo add my-repo https://charts.bitnami.com/bitnami
+ 1185  helm install my-release my-repo/wordpress --set wordpressPassword=password
+ 1186  kubectl get pods
+ 1187  kubectl describe pod my-release-wordpress-5698d7d77b-z6m9j
+ 1188  kubectl describe pod my-release-mariadb-0 
+ 1189  cd kuberentes
+ 1190  cd Kubernetes
+ 1191  kubectl delete -f efs-storageclass.yaml
+ 1192  kubectl apply -f efs-storageclass.yaml
+ 1193  kubectl get pods
+ 1194  kubectl describe pod my-release-wordpress-5698d7d77b-z6m9j
+ 1195  kubeclt get nodes
+ 1196  kubectl get nodes
+ 1197  kubectl describe nodes
+ 1198  kubectl get pods
+ 1199  kubeclt describe pods my-release-wordpress-5698d7d77b-z6m9j
+ 1200  kubectl describe pods my-release-wordpress-5698d7d77b-z6m9j
+ 1201  kubectl describe pvc
+ 1202  kubectl destroy -f efs-storageclass.yaml
+ 1203  kubectl delete -f efs-storageclass.yaml
+ 1204  kubectl apply -f efs-storageclass.yaml
+ 1205  helm install my-release my-repo/wordpress --set wordpressPassword=password
+ 1206  helm uninstall my-release
+ 1207  helm install my-release my-repo/wordpress --set wordpressPassword=password
+ 1208  kubectl get pods
+ 1209  kubectl get pvc
+ 1210  kubectl describe wordpress-pvc
+ 1211  kubectl -n troubleshooting describe pod my-release-wordpress-5698d7d77b-wkf4d
+ 1212  kubectl  describe pod my-release-wordpress-5698d7d77b-wkf4d
+ 1213  cd ..
+ 1214  cd 
+ 1215  curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+ 1216  chmod +x ./kubectl
+ 1217  sudo mv ./kubectl /usr/local/bin/kubectl
+ 1218  sudo mv ./kubectl /usr/local/bin/kubectl1
+ 1219  sudo mv ./kubectl /usr/local/bin/kubectl
+ 1220  kubectl version --client
+ 1221  aws eks update-kubeconfig --name my-eks
+ 1222  kubectl config view
+ 1223  kubectl get node
+ 1224  terraform destroy 
+ 1225  cd terraform 
+ 1226  terraform destroy --var-file=tfvars/dev.tfvars
+ 1227  cd terraform
+ 1228  terraform init
+ 1229  terraform apply -var-file=tfvars/dev.tfvars
+ 1230  terraform destroy  -var-file=tfvars/dev.tfvars
+ 1231  terraform apply -var-file=tfvars/dev.tfvars
+ 1232  aws eks update-kubeconfig --name my-eks
+ 1233  cd ..
+ 1234  cd Kubernetes
+ 1235  kubectl config view
+ 1236  kubectl get node
+ 1237  helm install efs-provisioner aws-efs-csi-driver/aws-efs-csi-driver   --namespace kube-system   --set enableIAM=true
+ 1238  helm repo add aws-efs-csi-driver https://kubernetes-sigs.github.io/aws-efs-csi-driver
+ 1239  helm repo update
+ 1240  helm install efs-provisioner aws-efs-csi-driver/aws-efs-csi-driver   --namespace kube-system   --set enableIAM=true
+ 1241  kubectl get deployments -n kube-system
+ 1242  kubectl apply -f efs-storageclass.yaml
+ 1243  helm repo add my-repo https://charts.bitnami.com/bitnami
+ 1244  helm install my-release my-repo/wordpress --set wordpressPassword=password
+ 1245  kubectl get pods
+ 1246  kubectl get nodes
+ 1247  kubectl describe pod my-release-wordpress-67c9b5b47c-6zkvx 
+ 1248  export SERVICE_IP=$(kubectl get svc --namespace default wp-demo-wordpress --include "{{ range (index .status.loadBalancer.ingress 0) }}{{ . }}{{ end }}")
+ 1249  echo "WordPress URL: http://$SERVICE_IP/"
+ 1250  echo "WordPress Admin URL: http://$SERVICE_IP/admin"
+ 1251  kubectl get nodes
+ 1252  kubectl describe node ip-10-0-30-105.ec2.internal 
+ 1253  kubectl get pods
+ 1254  kubectl get pvc
+ 1255  kubectl describe wordpress-pvc 
+ 1256  kubectl describe pvc wordpress-pvc 
+ 1257  history > CommandHist.txt
